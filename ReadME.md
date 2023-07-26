@@ -61,6 +61,7 @@ $ git branch -a
 
 hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (dev)
 ```
+## Bundle 1
 
 ### Exercise 2
 
