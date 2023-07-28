@@ -370,3 +370,42 @@ Author: Ishimwe <ishimwgabby@gmail.com>
 Date:   Thu Jul 27 11:06:52 2023 +0200
 
 ```
+```bash
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/faq-page)
+$ git log
+commit af113f00194278d9dcdaf3d3140f80d33d1d1629 (HEAD -> ft/faq-page)
+Author: Ishimwe <ishimwgabby@gmail.com>
+Date:   Fri Jul 28 11:32:41 2023 +0200
+
+    Revert "Added Teams file"
+
+    This reverts commit d686204388606447b87f80ba315001f3e38217e1.
+
+commit 948aa96755628261d84d94af59a368aecf892160 (origin/ft/faq-page)
+Author: Ishimwe <ishimwgabby@gmail.com>
+Date:   Fri Jul 28 11:30:41 2023 +0200
+
+    Added faq file.
+```
+```bash
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/faq-page)
+$ git push origin ft/faq-page)
+bash: syntax error near unexpected token `)'
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 272 bytes | 272.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ishimwe07/Gym-Git-Exercise-Solutions-recap.git
+   948aa96..af113f0  ft/faq-page -> ft/faq-page
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/faq-page)
+$
+```
