@@ -409,3 +409,141 @@ To https://github.com/ishimwe07/Gym-Git-Exercise-Solutions-recap.git
 hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/faq-page)
 $
 ```
+
+## Bundle 3 
+### Exercise 2
+
+```bash
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (main)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (main)
+$ git add .
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (main)
+$ git commit -m"Added a parag on home page."
+[main 2a3f50d] Added a parag on home page.
+ 1 file changed, 1 insertion(+)
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 335 bytes | 335.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ishimwe07/Gym-Git-Exercise-Solutions-recap.git
+   5f0a9c3..2a3f50d  main -> main
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (main)
+$ git log
+commit 2a3f50d3ebee066999408f99937442c7d3a6a5ec (HEAD -> main, origin/main)
+Author: Ishimwe <ishimwgabby@gmail.com>
+Date:   Mon Jul 31 11:05:59 2023 +0200
+
+    Added a parag on home page.
+
+commit 5f0a9c381e6f9067aee0e689535f89fbccb3ed24
+Merge: 1f48b74 3adc771
+Author: Ishimwe <ishimwgabby@gmail.com>
+Date:   Mon Jul 31 10:58:12 2023 +0200
+
+    Merge branch 'main' of https://github.com/ishimwe07/Gym-Git-Exercise-Solutions-recap
+
+commit 1f48b74010052154fc485b18e42b261391588353
+Author: Ishimwe <ishimwgabby@gmail.com>
+Date:   Mon Jul 31 10:57:37 2023 +0200
+
+    Added a paragraph on home page.
+
+commit 3adc771e160f534ed67c3d04e19b8b4ddc393c06
+Author: ISHIMWE Gabby <81089765+ishimwe07@users.noreply.github.com>
+Date:   Fri Jul 28 11:38:29 2023 +0200
+
+    Update ReadME.md
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/home-page-redesign)
+$ git rebase 2a3f50d3ebee066999408f99937442c7d3a6a5ec
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/home-page-redesign)
+$ git status
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/home-page-redesign)
+$ git status
+On branch ft/home-page-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/home-page-redesign)
+$ git add .
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/home-page-redesign)
+$ git commit -m"Added new content on the page"
+[ft/home-page-redesign f0b9381] Added new content on the page
+ 1 file changed, 1 insertion(+)
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (14/14), 1.47 KiB | 754.00 KiB/s, done.
+Total 14 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/ishimwe07/Gym-Git-Exercise-Solutions-recap/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/ishimwe07/Gym-Git-Exercise-Solutions-recap.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/home-page-redesign)
+$
+
+```
