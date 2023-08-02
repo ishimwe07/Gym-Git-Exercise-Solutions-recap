@@ -715,7 +715,7 @@ $
 All clear, pages are being displayed.
 ```
 
-###Exersise 2
+### Exersise 2
 ```bash
 
 hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/squashing)
