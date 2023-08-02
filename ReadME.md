@@ -707,7 +707,7 @@ To https://github.com/ishimwe07/Gym-Git-Exercise-Solutions-recap.git
 
 hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap (ft/squashing)
 $
-``
+```
 ## Bundle 5
 
 ### Exerise 1
