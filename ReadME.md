@@ -848,3 +848,53 @@ To https://github.com/ishimwe07/git-cafe-exercise.git
 hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (ft-bundle-6-Exer-1)
 $
 ```
+## Bundle 6
+
+### Exercise 2
+```bash
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (ft-bundle-6-Exer-1)
+$ git checkout -b bug-fix-branch
+Switched to a new branch 'bug-fix-branch'
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (bug-fix-branch)
+$ git status
+On branch bug-fix-branch
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    index-4.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Contact.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (bug-fix-branch)
+$ git add .
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (bug-fix-branch)
+$ git commit -m"Changed the title of the index-4.html file to “Contact”"
+[bug-fix-branch 1156c47] Changed the title of the index-4.html file to “Contact”
+ 1 file changed, 203 insertions(+), 203 deletions(-)
+ rename index-4.html => Contact.html (97%)
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (bug-fix-branch)
+$ git push origin bug-fix-branch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.52 KiB | 2.52 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug-fix-branch' on GitHub by visiting:
+remote:      https://github.com/ishimwe07/git-cafe-exercise/pull/new/bug-fix-branch
+remote:
+To https://github.com/ishimwe07/git-cafe-exercise.git
+ * [new branch]      bug-fix-branch -> bug-fix-branch
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-rec
+```
