@@ -779,3 +779,72 @@ hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solution
 $
 
 ```
+
+## Bundle 6
+
+### Exercise 1
+
+```bash
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (main)
+$ git checkout -b ft-bundle-6-Exer-1
+Switched to a new branch 'ft-bundle-6-Exer-1'
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (ft-bundle-6-Exer-1)
+$ git status
+On branch ft-bundle-6-Exer-1
+nothing to commit, working tree clean
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (ft-bundle-6-Exer-1)
+$ git status
+On branch ft-bundle-6-Exer-1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        menu.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (ft-bundle-6-Exer-1)
+$ git add .
+g
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (ft-bundle-6-Exer-1)
+$ git commit -m"added a menu page"
+[ft-bundle-6-Exer-1 dd02ad6] added a menu page
+ 1 file changed, 14 insertions(+)
+ create mode 100644 menu.html
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (ft-bundle-6-Exer-1)
+$ git push
+fatal: The current branch ft-bundle-6-Exer-1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft-bundle-6-Exer-1
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (ft-bundle-6-Exer-1)
+$ git remote -v
+origin  https://github.com/ishimwe07/git-cafe-exercise.git (fetch)
+origin  https://github.com/ishimwe07/git-cafe-exercise.git (push)
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (ft-bundle-6-Exer-1)
+$ git push origin ft-bundle-6-Exer-1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 455 bytes | 227.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft-bundle-6-Exer-1' on GitHub by visiting:
+remote:      https://github.com/ishimwe07/git-cafe-exercise/pull/new/ft-bundle-6-Exer-1
+remote:
+To https://github.com/ishimwe07/git-cafe-exercise.git
+ * [new branch]      ft-bundle-6-Exer-1 -> ft-bundle-6-Exer-1
+
+hp@DESKTOP-IQUI18G MINGW64 ~/Desktop/The Gym/Exercises/Gym-Git-Exercise-Solutions-recap/git-cafe-exercise (ft-bundle-6-Exer-1)
+$
+```
